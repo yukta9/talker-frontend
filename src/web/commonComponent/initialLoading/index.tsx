@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import initialLoading from "../../../assets/initialLoading.svg";
 
 const InitialLoading: React.FC = () => {
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(30);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,7 +21,7 @@ const InitialLoading: React.FC = () => {
         <p className="text-[24px] font-normal">Talker</p>
         <div className="w-[230px] h-3 border-[2px] mt-2 rounded-full border-customBlue p-[2px]">
           <div
-            className="h-full bg-customBlue transition-all duration-[2000ms] ease-linear"
+            className="h-full bg-customBlue transition-all duration-[1000ms] ease-linear"
             style={{ width: `${progress}%` }}
           ></div>
         </div>
